@@ -7,13 +7,13 @@
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/basics{{PageCur=='basics'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">主页</view>
+    <view class="{{PageCur=='basics'?'text-green':'text-gray'}}">展示区</view>
   </view>
   <view class="action" bindtap="NavChange" data-cur="component">
     <view class='cuIcon-cu-image'>
       <image src="/images/tabbar/component{{PageCur=='component'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='component'?'text-green':'text-gray'}}">功能</view>
+    <view class="{{PageCur=='component'?'text-green':'text-gray'}}">功能区</view>
   </view>
   <!-- <view class="action" bindtap="NavChange" data-cur="plugin">
     <view class='cuIcon-cu-image'>

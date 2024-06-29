@@ -1,2 +1,4 @@
-<!--pages/component/myClass/memberSetting/teacherSetting/teacherSetting.wxml-->
-<text>pages/component/myClass/memberSetting/teacherSetting/teacherSetting.wxml</text>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">教师新增</view>
+</cu-custom>

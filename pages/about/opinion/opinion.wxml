@@ -1,0 +1,32 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">意见反馈</view>
+</cu-custom>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-warn text-green"></text>
+      <text class="text-grey">小提示：</text>
+    </view>
+    <view class="action">
+      <text class="text-grey text-sm">感谢您的反馈</text>
+    </view>
+  </view>
+</view>
+<form>
+<view class="cu-form-group ">
+		<view class="title">反馈类型</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+        {{index?picker[index]:'选择反馈类型'}}
+			</view>
+		</picker>
+	</view>
+  <view class="cu-form-group ">
+    <view class="title">具体内容</view>
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder=""></textarea>
+	</view>
+</form>
+<view class="padding flex flex-wrap justify-between align-center bg-white">
+  <button class="flex-sub  padding-sm margin-xs radius  cu-btn bg-blue cuIcon-add  ">保存</button>
+</view>

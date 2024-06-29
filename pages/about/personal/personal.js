@@ -1,11 +1,14 @@
-// pages/about/home.js
+// pages/component/memberSetting/studentSetting/studentDetail/studentDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    index: null,
+    picker: ['男', '女', '无'],
+    date: '2018-12-25',
+    region: ['山西省', '长治市', '屯留区'],
   },
 
   /**
@@ -28,14 +31,33 @@ Page({
   onShow() {
 
   },
-
+  PickerChange(e) {
+    console.log(e);
+    this.setData({
+      index: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
 
   },
-
+  TimeChange(e) {
+    this.setData({
+      time: e.detail.value
+    })
+  },
+  DateChange(e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  RegionChange: function(e) {
+    this.setData({
+      region: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面卸载
    */

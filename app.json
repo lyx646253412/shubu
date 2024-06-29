@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/about/home",
     "pages/about/home/home",
     "pages/basics/home/home",
     "pages/component/home/home",
@@ -30,7 +29,10 @@
     "pages/component/myClass/sign/sign",
     "pages/component/myClass/sign/signDetail/signDetail",
     "pages/component/myClass/sign/signDetail/signDetailAdd/signDetailAdd",
-    "pages/component/myClass/sign/signDetail/signDetailHis/signDetailHis"
+    "pages/component/myClass/sign/signDetail/signDetailHis/signDetailHis",
+    "pages/about/personal/personal",
+    "pages/about/binding/binding",
+    "pages/about/opinion/opinion"
   ],
   "window": {
     "navigationBarTextStyle": "black",
