@@ -1,0 +1,34 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">签到记录</view>
+</cu-custom>
+<view class="cu-form-group margin-top">
+		<view class="title">日 期：2026年02月29日</view>
+	  
+	</view>
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-green"></text> 未出勤
+  </view>
+</view>
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index< gridCol*2}}">
+    <navigator hover-class='none' url="/pages/component/memberSetting/studentSetting/studentDetail/studentDetail" >
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}" />
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+</view>
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange"></text> 出勤
+  </view>
+</view>
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index< gridCol*2}}">
+    <navigator hover-class='none' url="/pages/component/memberSetting/studentSetting/studentDetail/studentDetail" >
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}" />
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+</view>

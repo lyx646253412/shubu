@@ -1,0 +1,23 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">批量新增学生信息</view>
+</cu-custom>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-warn text-green"></text>
+      <text class="text-grey">小提示：</text>
+    </view>
+    <view class="action">
+      <text class="text-grey text-sm">仅需输入名字后空格即可</text>
+    </view>
+  </view>
+</view>
+<form >
+  <view class="cu-form-group margin-top">
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="输入名字后增加空格即可"></textarea>
+	</view>
+</form>
+<view class="padding flex flex-wrap justify-between align-center bg-white">
+  <button class="cu-btn bg-blue cuIcon-add round ">保存</button>
+</view>

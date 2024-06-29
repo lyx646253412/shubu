@@ -1,0 +1,10 @@
+<scroll-view scroll-y class="scrollPage"><cu-custom bgColor="bg-gradual-blue">
+
+</cu-custom>
+<view class='nav-list'>
+    <navigator hover-class='none' url="/pages/component/{{item.name}}/{{item.name}}" class="nav-li nav-join bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+      <view class="nav-title">{{item.title}}</view>
+      <view class="nav-name">{{item.name}}</view>
+      <text class='cuIcon-{{item.icon}}'></text>
+    </navigator>
+  </view></scroll-view>

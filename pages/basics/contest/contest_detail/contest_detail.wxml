@@ -1,0 +1,14 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">作品竞赛</view>
+</cu-custom>
+
+<view class='nav-list'>
+    <navigator open-type="navigate" hover-class='none' url="/pages/basics/{{item.name}}/{{item.name}}" class="nav-li bg-other" wx:for="{{elements}}" wx:key>
+      <image src="{{item.img}}" mode="aspectFill"></image>
+      <view class="flex  justify-end">
+      <view class="nav-name radius">{{item.name}}</view>
+      <view class='nav-text flex-sub padding-sm margin-xs '>第一名</view></view>
+    </navigator>
+  </view>
+  <view class='cu-tabbar-height'></view>

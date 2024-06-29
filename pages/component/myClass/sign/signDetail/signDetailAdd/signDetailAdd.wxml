@@ -1,0 +1,33 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">签到生成</view>
+</cu-custom>
+<view class="cu-form-group">
+    <view class="title">日期选择</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-warn text-green"></text>
+      <text class="text-grey">提示：</text>
+    </view>
+    <view class="action">
+      <text class="text-grey text-sm">选择未出勤用户即可，保存后，未选择的用户默认出勤</text>
+    </view>
+  </view>
+</view>
+<view class="grid col-5 padding-sm btn-width-all">
+    <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key wx:if="{{item.name!='white'}}">
+    <button bindtap="changeButton" data-value="{{item}}" class="cu-btn round mini line{{item.bordersize?item.bordersize:''}}-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
+    </view>
+  </view>
+
+  <view class="padding-xl">
+    <button class="cu-btn block line-blue lg">
+    <text class="cuIcon-add"></text> 保存</button>
+</view>

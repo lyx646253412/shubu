@@ -1,0 +1,20 @@
+.bg-gold {
+  background-color: #FFD700;
+	color: var(--white);
+}
+.bg-silver{
+  background-color: #C0C0C0;
+	color: var(--white);
+}
+.bg-copper{
+  background-color: #B87333;
+	color: var(--white);
+}
+.bg-other{
+  background-color: var(--gray);
+	color: var(--white);
+}
+.nav-text:before {
+  float: right; 
+  background-color: var(--blue);
+}

@@ -1,0 +1,46 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">申请信息列表</view>
+</cu-custom>
+<view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 未处理
+    </view>
+  </view>
+  <view class="cu-list menu-avatar">
+    <view class="cu-item"  bindtap="gotoPage">
+      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="content">
+        <view class="text-grey">凯尔</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text class="cuIcon-warnfill text-red  margin-right-xs"></text> 用户绑定班级申请
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">06月28日22:20</view>
+      </view>
+    </view>
+    </view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 已处理
+    </view>
+  </view>
+  <view class="cu-list menu-avatar">
+    <view class="cu-item">
+      <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+      <view class="content">
+        <view class="text-grey">凯尔</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text class="cuIcon-check text-close  margin-right-xs"></text> 用户绑定班级申请
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">06月28日22:20</view>
+      </view>
+    </view>
+    </view>

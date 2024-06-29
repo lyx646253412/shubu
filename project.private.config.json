@@ -1,0 +1,57 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E4%B9%A6%E8%A1%A5",
+  "setting": {
+    "compileHotReLoad": false,
+    "skylineRenderEnable": false
+  },
+  "libVersion": "3.4.7",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "学生列表",
+          "pathName": "pages/component/myClass/memberSetting/studentSetting/studentSetting",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "班级修改",
+          "pathName": "pages/component/myClass/classSetting/classMessage/classMessage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的班级",
+          "pathName": "pages/component/myClass/myClass",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "补习班详情",
+          "pathName": "pages/component/remedial/remedial_detail/remedial_detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "系统通知",
+          "pathName": "pages/component/sysNotify/sysNotify",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "时间线",
+          "pathName": "pages/component/timeLine/timeLine",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

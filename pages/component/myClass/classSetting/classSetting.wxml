@@ -1,0 +1,31 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">培训班</view>
+</cu-custom>
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-green"></text> 进行中
+  </view>
+</view>
+<view class='nav-list'>
+  <navigator hover-class='none' url="/pages/component/myClass/classSetting/classMessage/classMessage" class="nav-li nav-join bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+    <view class="nav-title">{{item.title}}</view>
+    <view class="nav-name">{{item.name}}</view>
+    <text class='cuIcon-{{item.icon}}'></text>
+  </navigator>
+</view>
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange"></text> 招生中
+  </view>
+</view>
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-gray"></text> 已结束
+  </view>
+</view>
+
+<view class="padding-xl ">
+  <button class=" cu-btn block line-orange lg">
+    <text class="cuIcon-add"></text>新增班级</button>
+</view>

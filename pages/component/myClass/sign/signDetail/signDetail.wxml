@@ -1,0 +1,38 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">签到详情</view>
+</cu-custom>
+<form>
+  <view class="cu-form-group">
+    <view class="title">班级名称</view>
+    <input placeholder="班级名称"></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">签到日期</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+</form>
+<view class="padding-xl">
+    <button class="cu-btn block line-blue lg">
+    <text  bindtap="gotoPage"  class="cuIcon-add"></text> 生成</button>
+</view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 历史记录
+  </view>
+</view>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  <view bindtap="gotoPageHis" class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-warn text-green"></text>
+        <text class="text-grey">20240628出勤记录</text>
+      </view>
+      <view class="action">
+        <text class="text-grey text-sm">12：22</text>
+      </view>
+    </view>
+</view>

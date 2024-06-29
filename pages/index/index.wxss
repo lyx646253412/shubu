@@ -1,0 +1,8 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  flex-direction: column;
+}
+.scrollarea {
+  flex: 1;
+}

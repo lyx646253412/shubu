@@ -1,0 +1,61 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">培训班信息</view>
+</cu-custom>
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-circlefill text-grey"></text>
+      <text class="text-grey">班级名称</text>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class="content">
+      <text class="cuIcon-warn text-green"></text>
+      <text class="text-grey">地址:</text>
+    </view>
+    <view class="action">
+      <text class="text-grey text-sm">建环大街12号799</text>
+    </view>
+
+  </view>
+
+</view>
+<view class="cu-bar bg-white solid-bottom ">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 教师信息
+  </view>
+</view>
+
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index< gridCol*2}}">
+    <navigator hover-class='none' url="/pages/component/memberSetting/studentSetting/studentDetail/studentDetail">
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}" />
+      <text>{{item.name}}</text>
+    </navigator>
+
+  </view>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 学生信息
+  </view>
+</view>
+
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index< gridCol*2}}">
+    <navigator hover-class='none' url="/pages/component/memberSetting/studentSetting/studentDetail/studentDetail">
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}" />
+      <text>{{item.name}}</text>
+    </navigator>
+
+  </view>
+</view>
