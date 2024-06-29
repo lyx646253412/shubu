@@ -35,10 +35,10 @@
       </navigator>
     </view>
     <view class="cu-item arrow">
-      <button class="cu-btn content" open-type="feedback">
+      <navigator class="content" url="/pages/about/opinion/opinion" hover-class="none">
         <text class="cuIcon-writefill text-cyan"></text>
         <text class="text-grey">意见反馈</text>
-      </button>
+      </navigator>
     </view>
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/about/buy/buy" hover-class="none">
